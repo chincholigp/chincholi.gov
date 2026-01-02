@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>पंचायतीची माहिती</title>
+
+<style>
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    background:#f4f6f8;
+}
+
+/* Header */
+.top-header{
+    text-align:center;
+    padding:18px;
+    font-size:24px;
+    font-weight:bold;
+    background: linear-gradient(to right,#ff9933,#ffffff,#138808);
+}
+
+/* Menu */
+.menu{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    background:#003f7f;
+}
+.menu a{
+    color:white;
+    padding:12px 16px;
+    text-decoration:none;
+    font-weight:bold;
+}
+.menu a:hover{
+    background:#002a55;
+}
+
+/* Container */
+.container{
+    max-width:1200px;
+    margin:20px auto;
+    padding:20px;
+}
+
+h2{
+    color:#003f7f;
+    margin-bottom:15px;
+}
+
+/* Grid layouts */
+.grid-3{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:20px;
+    margin-bottom:30px;
+}
+.grid-4{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:20px;
+    margin-bottom:30px;
+}
+.grid-5{
+    display:grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap:20px;
+    margin-bottom:30px;
+}
+
+
+/* Card */
+.card{
+    background:white;
+    border-radius:12px;
+    padding:15px;
+    text-align:center;
+    box-shadow:0 2px 6px rgba(0,0,0,0.15);
+}
+
+.card img{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    object-fit:cover;
+    border:3px solid #003f7f;
+}
+
+.card h3{
+    margin:10px 0 5px;
+}
+
+.role{
+    color:#d84315;
+    font-weight:bold;
+}
+
+.mobile{
+    margin-top:5px;
+    font-size:14px;
+    font-weight:bold;
+}
+
+/* Buttons */
+.contact{
+    margin-top:10px;
+    display:flex;
+    justify-content:center;
+    gap:10px;
+}
+
+.contact a{
+    text-decoration:none;
+    padding:6px 10px;
+    border-radius:6px;
+    color:white;
+    font-size:14px;
+}
+
+.call{ background:#28a745; }
+.whatsapp{ background:#25D366; }
+
+/* Responsive */
+@media(max-width:900px){
+    .grid-3{ grid-template-columns:repeat(2,1fr); }
+    .grid-4{ grid-template-columns:repeat(2,1fr); }
+    .grid-5{ grid-template-columns:repeat(2,1fr); }
+}
+@media(max-width:500px){
+    .grid-3,.grid-4,.grid-5{ grid-template-columns:1fr; }
+}
+</style>
+    <!-- ✅ GOOGLE ANALYTICS इथेच टाका -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-MKCTMSRM8R');
+</script>
+<!-- ✅ GOOGLE ANALYTICS END -->
+</head>
+
+<body>
+
+<div class="top-header">🏛️ ग्रामपंचायत चिंचोली</div>
+
+<div class="menu">
+    <a href="index.html">मुख्य पान</a>
+    <a href="panch-info.html">पंचायतीची माहिती</a>
+    <a href="documents.html">शासकीय योजना</a>
+    <a href="notices.html">नोटीस बोर्ड</a>
+    <a href="gallery.html">फोटो गॅलरी</a>
+    <a href="tax.html">मालमत्ता कर</a>
+    <a href="contact.html">संपर्क</a>
+</div>
+
+<div class="container">
+
+<!-- 🔝 Top Row -->
+<h2>पदाधिकारी</h2>
+<div class="grid-3">
+
+<div class="card">
+<img src="images/sarpanch.png">
+<h3>श्री. संतोष अरुण लोंढे</h3>
+<p class="role">सरपंच</p>
+<p class="mobile">📱  +919881793052, +917378590555</p>
+<div class="contact">
+<a href="tel:+919881793052" class="call">📞 Call</a>
+<a href="https://wa.me/+919881793052" target="_blank" class="whatsapp">💬 WhatsApp</a>
+</div>
+</div>
+
+<div class="card">
+<img src="images/upsarpanch.png">
+<h3>श्री.स्वप्निल हनुमंत देवकर</h3>
+<p class="role">उपसरपंच</p>
+<p class="mobile">📱 +91</p>
+<div class="contact">
+<a href="tel:+91" class="call">📞 Call</a>
+<a href="https://wa.me/+91" target="_blank" class="whatsapp">💬 WhatsApp</a>
+</div>
+</div>
+
+<div class="card">
+<img src="images/gramsevak.png">
+<h3>आर. एस. कांबळे </h3>
+<p class="role">ग्रामपंचायत अधिकारी</p>
+<p class="mobile">📱 +918308189723</p>
+<div class="contact">
+<a href="tel:+918308189723" class="call">📞 Call</a>
+<a href="https://wa.me/+918308189723" target="_blank" class="whatsapp">💬 WhatsApp</a>
+</div>
+</div>
+
+</div>
+
+<!-- ⬇️ Members Row 1 -->
+<h2>ग्रामपंचायत सदस्य</h2>
+<div class="grid-4">
+
+<div class="card">
+<img src="images/m1.png">
+<h3>श्री.बाळासाहेब त्रिंबक लोंढे </h3>
+<p class="role">सदस्य</p>
+<p class="mobile">📱 +91</p>
+<div class="contact">
+<a href="tel:+91" class="call">📞 Call</a>
+<a href="https://wa.me/+91" target="_blank" class="whatsapp">💬 WhatsApp</a>
+</div>
+</div>
+
+<div class="card">
+<img src="images/m2.png">
+<h3>सौ. स्वाती सोमेश्वर लेंडवे  </h3>
+<p class="role">सदस्य</p>
+<p class="mobile">📱 +91</p>
+<div class="contact">
+<a href="tel:+91" class="call">📞 Call</a>
+<a href="https://wa.me/+91" target="_blank" class="whatsapp">💬 WhatsApp</a>
+</div>
+</div>
+
+<div class="card">
+<img src="images/m3.png">
+<h3>सौ. सारिका रामदास वाघमारे </h3>
+<p class="role">सदस्य</p>
+<p class="mobile">📱 +91</p>
+<div class="contact">
+<a href="tel:+91" class="call">📞 Call</a>
+<a href="https://wa.me/+91" target="_blank" class="whatsapp">💬 WhatsApp</a>
+</div>
+</div>
+
+<div class="card">
+<img src="images/m3.png">
+<h3>श्री. दिलीप महादेव देवकुळे </h3>
+<p class="role">सदस्य</p>
+<p class="mobile">📱 +91</p>
+<div class="contact">
+<a href="tel:+91" class="call">📞 Call</a>
+<a href="https://wa.me/+91" target="_blank" class="whatsapp">💬 WhatsApp</a>
+</div>
+</div>
+</div>
+
+<!-- ⬇️ Members Row 2 -->
+<div class="grid-4">
+
+<div class="card">
+<img src="images/m4.png">
+<h3>श्री. राहुल शिवाजी पाटील</h3>
+<p class="role">सदस्य</p>
+<p class="mobile">📱 +91</p>
+<div class="contact">
+<a href="tel:+91" class="call">📞 Call</a>
+<a href="https://wa.me/+91" target="_blank" class="whatsapp">💬 WhatsApp</a>
+</div>
+</div>
+
+<div class="card">
+<img src="images/m5.png">
+<h3>सौ. संगिता विकास लोंढे</h3>
+<p class="role">सदस्य</p>
+<p class="mobile">📱 +91</p>
+<div class="contact">
+<a href="tel:+91" class="call">📞 Call</a>
+<a href="https://wa.me/+91" target="_blank" class="whatsapp">💬 WhatsApp</a>
+</div>
+</div>
+
+<div class="card">
+<img src="images/m6.png">
+<h3>सौ. रोहिणी विशाल शेंडे </h3>
+<p class="role">सदस्य</p>
+<p class="mobile">📱 +91</p>
+<div class="contact">
+<a href="tel:+91" class="call">📞 Call</a>
+<a href="https://wa.me/+91" target="_blank" class="whatsapp">💬 WhatsApp</a>
+</div>
+</div>
+
+<div class="card">
+<img src="images/m7.png">
+<h3>सौ. अश्विनी बाजीराव लोंढे </h3>
+<p class="role">सदस्य</p>
+<p class="mobile">📱 +91</p>
+<div class="contact">
+<a href="tel:+91" class="call">📞 Call</a>
+<a href="https://wa.me/+91" target="_blank" class="whatsapp">💬 WhatsApp</a>
+</div>
+</div>
+</div>
+<!-- ⬇️ ग्रामपंचायत कर्मचारी -->
+<h2 style="color:#003f7f;">👨‍💼 ग्रामपंचायत कर्मचारी</h2>
+
+<div class="grid-4">
+
+    <div class="card">
+        <img src="images/karmachari1.png">
+        <h3>श्री.लहू आप्पा देवकुळे </h3>
+        <p class="role">ग्रामपंचायत कर्मचारी</p>
+        <p class="mobile">📱 +919325725377</p>
+        <div class="contact">
+            <a href="tel:+919325725377" class="call">📞 Call</a>
+            <a href="https://wa.me/+919325725377" target="_blank" class="whatsapp">💬 WhatsApp</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="images/karmachari2.png">
+        <h3>श्री.अशोक अर्जुन आखाडे</h3>
+        <p class="role">पाणीपुरवठा कर्मचारी</p>
+        <p class="mobile">📱 +919604631405</p>
+        <div class="contact">
+            <a href="tel:+919604631405" class="call">📞 Call</a>
+            <a href="https://wa.me/+919604631405" target="_blank" class="whatsapp">💬 WhatsApp</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="images/karmachari3.png">
+        <h3>श्री. अनुपकुमार अशोक लेंडवे </h3>
+        <p class="role">संगणक परिचालक </p>
+        <p class="mobile">📱 +919881366275</p>
+        <div class="contact">
+            <a href="tel:+919881366275" class="call">📞 Call</a>
+            <a href="https://wa.me/+919881366275" target="_blank" class="whatsapp">💬 WhatsApp</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="images/karmachari4.png">
+        <h3>श्री.आकाश दगडू वाघमारे </h3>
+        <p class="role">ग्रामरोजगार सहाय्यक  </p>
+        <p class="mobile">📱 +919604421000</p>
+        <div class="contact">
+            <a href="tel:+919604421000" class="call">📞 Call</a>
+            <a href="https://wa.me/+919604421000" target="_blank" class="whatsapp">💬 WhatsApp</a>
+        </div>
+    </div>
+</div>
+
+<!-- ⬇️ विविध पदाधिकारी -->
+<h2 style="color:#003f7f;">👨‍💼 विविध पदाधिकारी</h2>
+
+<div class="grid-5">
+
+    <div class="card">
+        <img src="images/p1.png">
+        <h3>पी. आर. कांबळे </h3>
+        <p class="role">ग्रामीण डाक सेवक</p>
+        <p class="mobile">📱 +917058518776</p>
+        <div class="contact">
+            <a href="tel:+917058518776" class="call">📞 Call</a>
+            <a href="https://wa.me/+917058518776" target="_blank" class="whatsapp">💬 WhatsApp</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="images/p2.png">
+        <h3>पी.एस.कांबळे</h3>
+        <p class="role">ग्राम महसूल अधिकारी  </p>
+        <p class="mobile">📱 +918983450195</p>
+        <div class="contact">
+            <a href="tel:+918983450195" class="call">📞 Call</a>
+            <a href="https://wa.me/+918983450195" target="_blank" class="whatsapp">💬 WhatsApp</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="images/p3.png">
+        <h3>एस. व्ही. इंगळे </h3>
+        <p class="role">कृषी सहाय्यक </p>
+        <p class="mobile">📱 +919021345868</p>
+        <div class="contact">
+            <a href="tel:+919021345868" class="call">📞 Call</a>
+            <a href="https://wa.me/+919021345868" target="_blank" class="whatsapp">💬 WhatsApp</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="images/p4.png">
+        <h3>ज्योती सोमनाथ टोंगळे </h3>
+        <p class="role">ग्राम कामगार पोलिस पाटील   </p>
+        <p class="mobile">📱 +919689048807</p>
+        <div class="contact">
+            <a href="tel:+919689048807" class="call">📞 Call</a>
+            <a href="https://wa.me/+919689048807" target="_blank" class="whatsapp">💬 WhatsApp</a>
+        </div>
+    </div>
+
+<div class="card">
+        <img src="images/p5.png">
+        <h3>ज्योतिराम दिगंबर लोंढे</h3>
+        <p class="role">तंटामुक्ती समिती अध्यक्ष  </p>
+        <p class="mobile">📱 +919527195555</p>
+        <div class="contact">
+            <a href="tel:+919527195555" class="call">📞 Call</a>
+            <a href="https://wa.me/+919527195555" target="_blank" class="whatsapp">💬 WhatsApp</a>
+        </div>
+    </div>
+</div>
+
+</div>
+<!-- CONTAINER -->
+<div style="max-width:1100px;margin:auto;padding:20px;">
+
+<h2 style="color:#003f7f;">🏛️ ग्रामपंचायत समिती माहिती</h2>
+
+<!-- FILTER -->
+<label><b>समिती निवडा :</b></label>
+<select id="committeeFilter" onchange="loadTable()" 
+style="padding:8px;width:100%;max-width:300px;margin:10px 0;">
+    <option value="all">सर्व समित्या</option>
+    <option value="ग्राम आरोग्य पोषण समिती">ग्राम आरोग्य पोषण समिती</option>
+    <option value="पाणी पुरवठा व स्वच्छता समिती">पाणी पुरवठा व स्वच्छता समिती</option>
+    <option value="कृषि विकास समिती">कृषि विकास समिती</option>
+    <option value="शाळा व्यवस्थापन समिती">शाळा व्यवस्थापन समिती</option>
+     <option value="बाल हक्क सरंक्षण समिती">बाल हक्क सरंक्षण समिती</option>
+     <option value="जैव विविधता समिती">जैव विविधता समिती</option>
+</select>
+
+<!-- TABLE -->
+<div style="overflow-x:auto;">
+<table border="1" width="100%" cellpadding="8" cellspacing="0"
+style="border-collapse:collapse;background:#fff;margin-top:15px;">
+
+<thead style="background:#003f7f;color:#fff;">
+<tr>
+<th>समिती</th>
+<th>नाव</th>
+<th>पद</th>
+<th>मोबाईल</th>
+<th>WhatsApp</th>
+</tr>
+</thead>
+
+<tbody id="tableBody"></tbody>
+
+</table>
+</div>
+
+</div>
+
+<script>
+const members = [
+  {committee:"ग्राम आरोग्य पोषण समिती", name:"", post:"अध्यक्ष", mobile:""},
+  {committee:"ग्राम आरोग्य पोषण समिती", name:"", post:"सदस्य", mobile:""},
+  {committee:"पाणी पुरवठा व स्वच्छता समिती", name:"", post:"अध्यक्ष", mobile:""},
+  {committee:"पाणी पुरवठा व स्वच्छता समिती", name:"", post:"सदस्य", mobile:""},
+  {committee:"कृषि विकास समिती", name:"", post:"अध्यक्ष", mobile:""},
+  {committee:"कृषि विकास समिती", name:"", post:"सदस्य", mobile:""},
+  {committee:"शाळा व्यवस्थापन समिती", name:"", post:"अध्यक्ष", mobile:""},
+  {committee:"शाळा व्यवस्थापन समिती", name:"", post:"सदस्य", mobile:""},
+    {committee:"बाल हक्क सरंक्षण समिती", name:"", post:"अध्यक्ष", mobile:""},
+  {committee:"बाल हक्क सरंक्षण समिती", name:"", post:"सदस्य", mobile:""},
+    {committee:"जैव विविधता समिती", name:"", post:"अध्यक्ष", mobile:""},
+  {committee:"जैव विविधता समिती", name:"", post:"सदस्य", mobile:""}
+];
+
+function loadTable(){
+    const filter = document.getElementById("committeeFilter").value;
+    const tbody = document.getElementById("tableBody");
+    tbody.innerHTML = "";
+
+    const filtered = filter==="all" ? members :
+        members.filter(m => m.committee === filter);
+
+    if(filtered.length === 0){
+        tbody.innerHTML = "<tr><td colspan='5' align='center'>माहिती उपलब्ध नाही</td></tr>";
+        return;
+    }
+
+    filtered.forEach(m => {
+        tbody.innerHTML += `
+        <tr>
+            <td>${m.committee}</td>
+            <td>${m.name}</td>
+            <td>${m.post}</td>
+            <td>
+                <a href="tel:${m.mobile}" style="color:green;font-weight:bold;">
+                    📞 ${m.mobile}
+                </a>
+            </td>
+            <td>
+                <a href="https://wa.me/91${m.mobile}" target="_blank"
+                style="color:#25D366;font-weight:bold;">
+                    💬 WhatsApp
+                </a>
+            </td>
+        </tr>
+        `;
+    });
+}
+
+loadTable();
+</script>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

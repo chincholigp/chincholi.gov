@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Header with Logo -->
+<div style="
+display:flex;
+align-items:center;
+justify-content:center;
+gap:15px;
+padding:15px;
+background:linear-gradient(to right,#ff9933,#ffffff,#138808);
+flex-wrap:wrap;
+">
+    <!-- Title -->
+    <div style="text-align:center;">
+        <div style="font-size:26px;font-weight:bold;">
+            🌾 ग्रामपंचायत चिंचोली
+        </div>
+        <div style="font-size:14px;">
+            तालुका : माढा | जिल्हा : सोलापूर
+        </div>
+    </div>
+
+</div>
+<style>
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    background:#f4f6f8;
+}
+
+/* Header */
+.top-header{
+    text-align:center;
+    padding:20px;
+    font-size:26px;
+    font-weight:bold;
+    color:#000;
+    background: linear-gradient(to right,#ff9933,#ffffff,#138808);
+}
+
+/* Menu */
+.menu{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    background:#003f7f;
+}
+.menu a{
+    color:white;
+    padding:12px 18px;
+    text-decoration:none;
+    font-weight:bold;
+}
+.menu a:hover{
+    background:#002a55;
+}
+
+/* Scrolling News */
+.news-bar{
+    display:flex;
+    align-items:center;
+    background:#fff3cd;
+    border-top:2px solid #ff9800;
+    border-bottom:2px solid #ff9800;
+    padding:8px 10px;
+    font-weight:bold;
+}
+.news-title{
+    color:#d84315;
+    margin-right:10px;
+    white-space:nowrap;
+}
+
+/* Content */
+.container{
+    max-width:1100px;
+    margin:20px auto;
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 2px 6px rgba(0,0,0,0.1);
+}
+
+h2{
+    color:#003f7f;
+    margin-top:0;
+}
+
+/* 6 Section Grid */
+.section-grid{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:20px;
+    margin-top:20px;
+}
+
+.section-box{
+    background:#f8f9ff;
+    padding:18px;
+    border-radius:10px;
+    box-shadow:0 2px 5px rgba(0,0,0,0.08);
+}
+
+.section-box h3{
+    margin-top:0;
+    color:#003f7f;
+    font-size:18px;
+    border-bottom:2px solid #003f7f;
+    padding-bottom:6px;
+}
+
+.section-box ul{
+    padding-left:18px;
+    margin:8px 0 0 0;
+}
+
+.section-box p{
+    line-height:1.6;
+}
+
+/* Responsive */
+@media(max-width:900px){
+    .section-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media(max-width:600px){
+    .section-grid{
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+    <!-- ✅ GOOGLE ANALYTICS इथेच टाका -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-MKCTMSRM8R');
+</script>
+<!-- ✅ GOOGLE ANALYTICS END -->
+</head>
+
+<body>
+
+
+<!-- Menu -->
+<div class="menu">
+    <a href="index.html">मुख्य पान</a>
+    <a href="panch-info.html">पंचायतीची माहिती</a>
+    <a href="documents.html">शासकीय योजना</a>
+    <a href="notices.html">नोटीस बोर्ड</a>
+    <a href="gallery.html">फोटो गॅलरी</a>
+    <a href="tax.html">मालमत्ता कर</a>
+    <a href="contact.html">संपर्क</a>
+</div>
+
+<!-- Scrolling News -->
+<div class="news-bar">
+    <span class="news-title">📰 ताज्या सूचना :</span>
+    <marquee scrollamount="5" onmouseover="this.stop()" onmouseout="this.start()">
+        🏠 सर्व ग्रामस्थांनी घरपट्टीवर व पाणीपट्टी भरून ग्रामपंचायत ला सहकार्य करावे |
+        📢 सर्व ग्रामस्थांनी आयुष्यमान भारत योजना चे कार्ड काढून घ्यावे. |
+        🧹 स्वच्छता मोहिमेत सहभागी व्हा
+    </marquee>
+</div>
+
+<!-- 🖼️ Gallery Auto Slideshow -->
+<div id="gallerySlider" style="
+max-width:1100px;
+margin:15px auto;
+position:relative;
+overflow:hidden;
+border-radius:12px;
+box-shadow:0 3px 8px rgba(0,0,0,0.2);
+background:#000;
+">
+
+  <img id="sliderImg" src="images/p1.png" style="
+  width:100%;
+  height:380px;
+  object-fit:cover;
+  display:block;
+  ">
+
+  <div id="sliderCaption" style="
+  position:absolute;
+  bottom:0;
+  left:0;
+  right:0;
+  padding:10px;
+  background:rgba(0,0,0,0.6);
+  color:#fff;
+  font-size:16px;
+  text-align:center;
+  font-weight:bold;
+  ">
+-
+  </div>
+
+</div>
+
+<!-- Content -->
+<div class="container">
+
+<h2>ग्रामपंचायत माहिती</h2>
+
+<div class="section-grid">
+
+    <div class="section-box">
+        <h3>🏘️ गावाची माहिती</h3>
+        <p>
+            चिंचोली हे महाराष्ट्र राज्यातील सोलापूर जिल्ह्यातील
+            माढा तालुक्यात स्थित आहे. हे गाव प्रामुख्याने
+            शेतीप्रधान असून ग्रामस्थांचा मुख्य व्यवसाय
+            शेती व शेतीपूरक व्यवसाय आहे.
+        </p>
+    </div>
+
+    <div class="section-box">
+        <h3>🏛️ ग्रामपंचायतीची भूमिका</h3>
+        <ul>
+            <li>स्वच्छता व आरोग्य सुविधा</li>
+            <li>पाणीपुरवठा व्यवस्था</li>
+            <li>रस्ते, गटारी व दिवाबत्ती व्यवस्था</li>
+            <li>मालमत्ता कर व पाणीपट्टी वसुली</li>
+            <li>शासकीय योजना राबविणे</li>
+            <li>तक्रारी व सूचना नोंद</li>
+        </ul>
+    </div>
+
+    <div class="section-box">
+        <h3>🎯 ग्रामपंचायतीचे उद्दिष्ट</h3>
+        <ul>
+            <li>गावाचा सर्वांगीण विकास</li>
+            <li>स्वच्छ व सुंदर गाव</li>
+            <li>पारदर्शक सेवा</li>
+            <li>डिजिटल ग्रामपंचायत</li>
+        </ul>
+    </div>
+
+    <div class="section-box">
+        <h3>🏢 ग्रामपंचायत कार्यालय</h3>
+        <p>
+            ग्रामपंचायत कार्यालय,<br>
+            ग्रामपंचायत चिंचोली ,<br>
+            ता. माढा, जि. सोलापूर
+        </p>
+    </div>
+
+    <div class="section-box">
+        <h3>⏰ कार्यालयीन वेळ</h3>
+        <p>
+            सकाळी 10:00 ते सायं. 5:00<br>
+            <b>सुट्टी :</b> रविवार व शासकीय सुट्ट्या
+        </p>
+    </div>
+
+    <div class="section-box">
+        <h3>🤝 नागरिकांसाठी आवाहन</h3>
+        <p>
+            ग्रामपंचायत चिंचोली येथील नागरिकांनी कर वेळेवर भरावेत,
+            स्वच्छता राखावी व गावाच्या विकासासाठी
+            ग्रामपंचायतीस सहकार्य करावे.
+        </p>
+    </div>
+
+</div>
+
+</div>
+
+<!-- 🏗️ ग्राम पायाभूत सुविधा -->
+<div style="
+max-width:1100px;
+margin:30px auto;
+background:#ffffff;
+padding:25px;
+border-radius:12px;
+box-shadow:0 2px 8px rgba(0,0,0,0.12);
+">
+
+<h2 style="
+text-align:center;
+color:#003f7f;
+margin-top:0;
+margin-bottom:25px;
+">
+🏗️ ग्राम पायाभूत सुविधा
+</h2>
+
+<div style="
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:15px;
+">
+
+<div style="background:#e3f2fd;padding:15px;border-radius:10px;">💧 सार्वजनिक पाणीपुरवठा विहीर : <b>-</b></div>
+<div style="background:#e8f5e9;padding:15px;border-radius:10px;">🚰 बोअरवेल हातपंप : <b>-</b></div>
+<div style="background:#fff3e0;padding:15px;border-radius:10px;">🛢️ पाण्याच्या टाक्या : <b>-</b></div>
+<div style="background:#fce4ec;padding:15px;border-radius:10px;">🚻 सार्वजनिक शौचालये : <b>-</b></div>
+<div style="background:#ede7f6;padding:15px;border-radius:10px;">🗑️ सार्वजनिक कचराकुंड्या : <b>-</b></div>
+<div style="background:#e0f2f1;padding:15px;border-radius:10px;">♻️ घनकचरा व्यवस्थापन प्रकल्प : <b>-</b></div>
+<div style="background:#fffde7;padding:15px;border-radius:10px;">💡 रस्त्यावरील पथदिवे : <b>-</b></div>
+
+<div style="background:#e3f2fd;padding:15px;border-radius:10px;">🏫 प्राथमिक शाळा : <b>-</b></div>
+<div style="background:#e8f5e9;padding:15px;border-radius:10px;">🏫 माध्यमिक शाळा : <b>-</b></div>
+<div style="background:#fff3e0;padding:15px;border-radius:10px;">🏫 उच्च माध्यमिक शाळा : <b>-</b></div>
+<div style="background:#fce4ec;padding:15px;border-radius:10px;">👶 अंगणवाडी : <b>-</b></div>
+<div style="background:#ede7f6;padding:15px;border-radius:10px;">🏢 सार्वजनिक इमारती : <b>-</b></div>
+
+<div style="background:#e0f2f1;padding:15px;border-radius:10px;">📍 जिल्हा मुख्यालय अंतर : <b>- कि.मी.</b></div>
+<div style="background:#fffde7;padding:15px;border-radius:10px;">📍 तालुका मुख्यालय अंतर : <b>- कि.मी.</b></div>
+
+<div style="background:#e3f2fd;padding:15px;border-radius:10px;">🚌 गावात बस सुविधा : <b>होय</b></div>
+<div style="background:#e8f5e9;padding:15px;border-radius:10px;">🏦 बँक सुविधा : <b>-</b></div>
+<div style="background:#fff3e0;padding:15px;border-radius:10px;">🏥 आरोग्य केंद्र / उपकेंद्र : <b>-</b></div>
+
+<div style="background:#fce4ec;padding:15px;border-radius:10px;">🏡 पर्यटकांसाठी होम स्टे : <b>-</b></div>
+<div style="background:#ede7f6;padding:15px;border-radius:10px;">🍽️ हॉटेल : <b>-</b></div>
+
+<div style="background:#e0f2f1;padding:15px;border-radius:10px;">📚 वाचनालय : <b>-</b></div>
+<div style="background:#fffde7;padding:15px;border-radius:10px;">⚽ खेळाचे मैदान : <b>-</b></div>
+
+</div>
+</div>
+
+<!-- Population Dashboard -->
+<div style="
+max-width:1100px;
+margin:30px auto;
+background:#ffffff;
+padding:20px;
+border-radius:12px;
+box-shadow:0 2px 8px rgba(0,0,0,0.12);
+">
+
+<h2 style="
+text-align:center;
+color:#003f7f;
+margin-top:0;
+margin-bottom:20px;
+">
+📊 गावाची लोकसंख्या व सामाजिक माहिती
+</h2>
+
+<!-- Cards Row -->
+<div style="
+display:flex;
+flex-wrap:wrap;
+gap:15px;
+justify-content:space-between;
+">
+
+<!-- Card 1 -->
+<div style="flex:1 1 22%;min-width:200px;background:#e3f2fd;padding:18px;border-radius:10px;text-align:center;">
+    <div style="font-size:28px;font-weight:bold;color:#0d47a1;">-</div>
+    <div>एकूण घरांची संख्या</div>
+</div>
+
+<!-- Card 2 -->
+<div style="flex:1 1 22%;min-width:200px;background:#e8f5e9;padding:18px;border-radius:10px;text-align:center;">
+    <div style="font-size:28px;font-weight:bold;color:#1b5e20;">-</div>
+    <div>एकूण लोकसंख्या</div>
+</div>
+
+<!-- Card 3 -->
+<div style="flex:1 1 22%;min-width:200px;background:#fff3e0;padding:18px;border-radius:10px;text-align:center;">
+    <div style="font-size:28px;font-weight:bold;color:#e65100;">-</div>
+    <div>पुरुष लोकसंख्या</div>
+</div>
+
+<!-- Card 4 -->
+<div style="flex:1 1 22%;min-width:200px;background:#fce4ec;padding:18px;border-radius:10px;text-align:center;">
+    <div style="font-size:28px;font-weight:bold;color:#880e4f;">-</div>
+    <div>महिला लोकसंख्या</div>
+</div>
+
+<!-- Card 5 -->
+<div style="flex:1 1 22%;min-width:200px;background:#ede7f6;padding:18px;border-radius:10px;text-align:center;">
+    <div style="font-size:28px;font-weight:bold;color:#311b92;">-</div>
+    <div>अनुसूचित जाती लोकसंख्या</div>
+</div>
+
+<!-- Card 6 -->
+<div style="flex:1 1 22%;min-width:200px;background:#e0f2f1;padding:18px;border-radius:10px;text-align:center;">
+    <div style="font-size:28px;font-weight:bold;color:#004d40;">-</div>
+    <div>साक्षर लोकसंख्या</div>
+</div>
+
+<!-- Card 7 -->
+<div style="flex:1 1 22%;min-width:200px;background:#fffde7;padding:18px;border-radius:10px;text-align:center;">
+    <div style="font-size:28px;font-weight:bold;color:#f57f17;">-</div>
+    <div>मुख्य शेतकरी</div>
+</div>
+
+<!-- Card 8 -->
+<div style="flex:1 1 22%;min-width:200px;background:#f3e5f5;padding:18px;border-radius:10px;text-align:center;">
+    <div style="font-size:28px;font-weight:bold;color:#4a148c;">-</div>
+    <div>शेती मजूर</div>
+</div>
+
+</div>
+
+<p style="
+text-align:center;
+margin-top:20px;
+font-size:13px;
+color:#555;
+">
+स्त्रोत : जनगणना माहिती
+</p>
+
+</div>
+<footer style="background:#0c4a6e; padding:25px 10px; color:#fff;">
+  <div style="max-width:1100px; margin:auto; text-align:center;">
+
+    <h3 style="margin-bottom:15px; font-size:20px;">
+     शासनाची महत्वाची मोबाईल ॲप्स
+    </h3>
+
+    <div style="display:flex; justify-content:center; gap:25px; flex-wrap:wrap;">
+
+      <!-- Meri Panchayat -->
+      <a href="https://play.google.com/store/apps/details?id=com.meri_panchayat"
+         target="_blank"
+         style="background:#fff; color:#000; text-decoration:none;
+                border-radius:10px; padding:12px; width:160px;
+                display:block; transition:0.3s;">
+        <img src="images/meri-panchayat.png"
+             alt="Meri Panchayat App"
+             style="width:80px; height:auto; margin-bottom:8px;">
+        <span style="display:block; font-weight:bold; font-size:14px;">
+          Meri Panchayat
+        </span>
+      </a>
+
+      <!-- Panchayat Nirnay -->
+      <a href="https://play.google.com/store/apps/details?id=com.gsnirnay.app"
+         target="_blank"
+         style="background:#fff; color:#000; text-decoration:none;
+                border-radius:10px; padding:12px; width:160px;
+                display:block;">
+        <img src="images/panchayat-nirnay.png"
+             alt="Panchayat Nirnay App"
+             style="width:80px; height:auto; margin-bottom:8px;">
+        <span style="display:block; font-weight:bold; font-size:14px;">
+          Panchayat Nirnay
+        </span>
+      </a>
+
+      <!-- GramSamvad -->
+      <a href="https://play.google.com/store/apps/details?id=com.nic.gramsamvaad"
+         target="_blank"
+         style="background:#fff; color:#000; text-decoration:none;
+                border-radius:10px; padding:12px; width:160px;
+                display:block;">
+        <img src="images/gramsamvad.png"
+             alt="GramSamvad App"
+             style="width:80px; height:auto; margin-bottom:8px;">
+        <span style="display:block; font-weight:bold; font-size:14px;">
+          GramSamvad
+        </span>
+      </a>
+
+    </div>
+
+    <p style="margin-top:15px; font-size:13px; color:#e5e7eb;">
+      ॲप डाउनलोड करण्यासाठी लोगोवर क्लिक करा
+    </p>
+
+  </div>
+</footer>
+<script>
+let galleryPhotos = [
+ {img:"images/p1.png", cap:"-"},
+ {img:"images/p2.png", cap:"-"},
+ {img:"images/p3.png", cap:"-"},
+ {img:"images/p4.png", cap:"-"},
+ {img:"images/p5.png", cap:"-"},
+ {img:"images/p6.png", cap:"-"},
+ {img:"images/p7.png", cap:"-"},
+ {img:"images/p8.png", cap:"-"},
+ {img:"images/p9.png", cap:"-"},
+ {img:"images/p10.png", cap:"-"},
+ {img:"images/p11.png", cap:"-"},
+ {img:"images/p12.png", cap:"-"},
+ {img:"images/p13.png", cap:"-"},
+ {img:"images/p14.png", cap:"-"},
+ {img:"images/p15.png", cap:"-"},
+ {img:"images/p16.png", cap:"-"},
+ {img:"images/p17.png", cap:"-"},
+ {img:"images/p18.png", cap:"-"},
+ {img:"images/p19.png", cap:"-"},
+ {img:"images/p20.png", cap:"-"}
+];
+
+let slideNo = 0;
+
+function startGallerySlider(){
+    let img = document.getElementById("sliderImg");
+    let cap = document.getElementById("sliderCaption");
+
+    slideNo++;
+    if(slideNo >= galleryPhotos.length){ slideNo = 0; }
+
+    img.src = galleryPhotos[slideNo].img;
+    cap.innerHTML = galleryPhotos[slideNo].cap;
+}
+
+setInterval(startGallerySlider, 3000); // 3 सेकंदांनी slide बदलेल
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
